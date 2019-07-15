@@ -24,5 +24,7 @@ namespace Composite
         public abstract void Draw(string space);
 
         public abstract int countLeaf();
+
+        public abstract Boolean isBinary();
     }
 }

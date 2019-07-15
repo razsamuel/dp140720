@@ -36,5 +36,10 @@ namespace Composite
         {
             return 1;
         }
+
+        public override bool isBinary()
+        {
+            return true;
+        }
     }
 }
