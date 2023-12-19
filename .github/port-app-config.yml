@@ -9,7 +9,7 @@ resources:
           title: '"repository"'
           blueprint: '"repository"'
           properties:
-            readme: file://README.md # fe tchi ng the R EADME.md file that is with in the roo t folder of the repository and ingesting its contents as a markdown property
+            readme: file://README.md # fe tchi ng the R EADME.md file that I s with in the roo t folder of the repository and ingesting its contents as a markdown property
             url: .html_url
             defaultBranch: .default_branch
   - kind: pull-request
