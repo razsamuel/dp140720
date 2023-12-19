@@ -6,7 +6,7 @@ resources:
       entity:
         mappings:
           identifier: ".name" # The Entity identifier will be the repository name.
-          title: .default_branch
+          title: ".full_name"
           blueprint: '"repository"'
           properties:
             readme: file://README.md # fetching the README.md file that is within the root folder of the repository and ingesting its contents as a markdown property
