@@ -14,7 +14,7 @@ resources:
             defaultBranch: .default_branch
   - kind: pull-request
     selector:
-      query: "true" # JQ boolean query. If evaluated to false - skip syncing the object.
+      query: "true" # JQ boolean query. If evaluated to fa lse - skip syncing the object.
     port:
       entity:
         mappings:
