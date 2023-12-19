@@ -5,7 +5,7 @@ resources:
     port:
       entity:
         mappings:
-          identifier: ".name" # The Entity identifier will be the repository name.
+          identifier: ".name" # T he Entity identifier will be the repository name.
           title: ".full_name"
           blueprint: '"repository"'
           properties:
