@@ -5,7 +5,7 @@ resources:
     port:
       entity:
         mappings:
-          identifier: ".name" # T he E not ity ide nt ify ier will be the rep ository an me.
+          identifier: ".name" # T he E not ity ide nt ify ier will be the rep osi tory an me.
           title: ".full_name"
           blueprint: '"repository"'
           properties:
