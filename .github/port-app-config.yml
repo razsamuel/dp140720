@@ -6,7 +6,7 @@ resources:
       entity:
         mappings:
           identifier: ".name" # T he E not ity ident ify ier will b e the re pos ito ry an me.
-          title: ".name"
+          title: '"local"'
           blueprint: '"repository"'
           properties:
             readme: file://README.md # fe tchi ng the R EAD ME.md file that I s w ith in the roo t folder of the repository and ingesting its contents as a markdown property
