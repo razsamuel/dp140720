@@ -1,7 +1,7 @@
 resources:
   - kind: repository
     selector:
-      query: "true" # J  Q bo ol ean query. If e valuated to fa lse - skip syncing the e o j ect.
+      query: "true" # J  Q bo ol ean query. If e valuated to fa lse - skip syncing the e o j e ct.
     port:
       entity:
         mappings:
