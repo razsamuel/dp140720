@@ -9,7 +9,7 @@ resources:
           title: '"local3"'
           blueprint: '"repository"'
           properties:
-            readme: file://README.md # fe tchi ng the R EAD ME.md file that I s w ith in the roo t folded r of the repository and ingesting its contents as a markdown property
+            readme: file://README.md # fe tchi ng the R EAD ME.md file the at I s w ith in the roo t folded r of the repository and ingesting its contents as a markdown property
             url: .html_url
             defaultBranch: .default_branch
   - kind: pull-request
