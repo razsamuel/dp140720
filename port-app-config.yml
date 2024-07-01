@@ -1,4 +1,4 @@
-resources:   
+resources:    
   - kind: repository
     selector:
       query: 'true'
