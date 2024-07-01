@@ -1,35 +1,35 @@
-resources:
+resources:    
   - kind: repository
     selector:
-      query: "true" # J  Q bo ol ean query. If e valua ted to fa lse - sk ip syn cing the e o j e ct.
+      query: 'true'
     port:
       entity:
         mappings:
-          identifier: ".name" # T he E not it y ident ify ier will b e the re pos I to ry an m e.
-          title: '"local3"'
-          blueprint: '"repository"'
+          identifier: .name
+          title: .name
+          blueprint: '"service"'
           properties:
-            readme: file://README.md # fe tchi ng the R EAD ME.md file the at I s w ith in the roo t folded r of the repository and ingesting its contents as a markdown property
+            readme: file://README.md
             url: .html_url
-            defaultBranch: .default_branch
+            language: .language
   - kind: pull-request
     selector:
-      query: "true" # JQ boolean query. If evaluated to fa lse - skip syncing the object.
+      query: 'true'
     port:
       entity:
         mappings:
-          identifier: ".head.repo.name + (.id|tostring)" # The Entity identifier will be the repository name + the pull request ID.
-          title: ".title"
-          blueprint: '"pullRequest"'
+          identifier: .head.repo.name + (.id|tostring)
+          title: .title
+          blueprint: '"githubPullRequest"'
           properties:
-            creator: ".user.login"
-            assignees: "[.assignees[].login]"
-            reviewers: "[.requested_reviewers[].login]"
-            status: ".status" # merged, closed, opened
-            closedAt: ".closed_at"
-            updatedAt: ".updated_at"
-            mergedAt: ".merged_at"
-            prNumber: ".id"
-            link: ".html_url"
+            creator: .user.login
+            assignees: '[.assignees[].login]'
+            reviewers: '[.requested_reviewers[].login]'
+            status: .status
+            closedAt: .closed_at
+            updatedAt: .updated_at
+            mergedAt: .merged_at
+            prNumber: .id
+            link: .html_url
           relations:
-            repository: .head.repo.name
+            service: .head.repo.name
